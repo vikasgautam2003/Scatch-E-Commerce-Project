@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 
 
-const userSchema = new mongoose.Schema({
+const   OwnerSchema = new mongoose.Schema({
     full_name: { type: String, minLength: 3,required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
@@ -16,4 +16,4 @@ const userSchema = new mongoose.Schema({
     gstin: { type: String, required: false },
 })
 
-module.exports = mongoose.model('User', userSchema);
+module.exports = mongoose.model('Owner', OwnerSchema);

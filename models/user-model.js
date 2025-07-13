@@ -10,8 +10,8 @@ const userSchema = new mongoose.Schema({
     cart: { type: Array, default: [] },
     isadmin: { type: Boolean, default: false },
     orders: { type: Array, default: [] },
-    contact: { type: Number, required: true },
-    picture: { type: String, required: true }
+    contact: { type: Number, required: false },
+    picture: { type: String, required: false }
 })
 
 module.exports = mongoose.model('User', userSchema);
